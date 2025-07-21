@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		55E3E3982E2B2C2E0069050C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E3E3972E2B2C2E0069050C /* IOKit.framework */; };
+		55E3E39A2E2B2C340069050C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E3E3992E2B2C340069050C /* CoreFoundation.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		55E3E3822E2B2AF90069050C /* RazerMouseDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RazerMouseDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E3E3972E2B2C2E0069050C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		55E3E3992E2B2C340069050C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		55E3E3952E2B2B9D0069050C /* Exceptions for "RazerMouseDriver" folder in "RazerMouseDriver" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 55E3E3812E2B2AF90069050C /* RazerMouseDriver */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		55E3E3842E2B2AF90069050C /* RazerMouseDriver */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				55E3E3952E2B2B9D0069050C /* Exceptions for "RazerMouseDriver" folder in "RazerMouseDriver" target */,
+			);
 			path = RazerMouseDriver;
 			sourceTree = "<group>";
 		};
@@ -23,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E3E39A2E2B2C340069050C /* CoreFoundation.framework in Frameworks */,
+				55E3E3982E2B2C2E0069050C /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				55E3E3842E2B2AF90069050C /* RazerMouseDriver */,
+				55E3E3962E2B2C2E0069050C /* Frameworks */,
 				55E3E3832E2B2AF90069050C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +66,15 @@
 				55E3E3822E2B2AF90069050C /* RazerMouseDriver.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		55E3E3962E2B2C2E0069050C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55E3E3992E2B2C340069050C /* CoreFoundation.framework */,
+				55E3E3972E2B2C2E0069050C /* IOKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +289,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RazerMouseDriver/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -284,6 +317,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RazerMouseDriver/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
